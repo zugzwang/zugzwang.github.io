@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=no"
+            />
+        <meta
+            name="description"
+            content="Cryptography, clarinet."
+            />
+        <meta name="theme-color" content="#ffffff" />
+        <title>Francisco Vial-Prado</title>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="node_modules/semantic-ui-offline/semantic.min.css"
+            />
+        <style type="text/css">
+body {
+    color: rgb(85, 85, 85);
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: grayscale;
+}
+
+      .ui.borderless.menu {
+          margin-top: 0;
+      }
+
+      .ui.inverted.pointing.menu .active.item:after {
+          background-color: white !important;
+      }
+
+      .ui.basic.segment {
+          padding-top: 4rem;
+      }
+
+      .ui.basic.segment > .ui.huge.header {
+          font-size: 54px;
+      }
+
+      .eleven.wide.column {
+          font-size: 18px;
+      }
+
+      .four.wide.column .ui.secondary.segment {
+          border: none;
+      }
+
+      footer.ui.segment {
+          margin-bottom: 0;
+          padding-top: 40px;
+          padding-bottom: 40px;
+      }
+
+      /* blockquote styles comes from bootstrap */
+      blockquote {
+          padding: 0.6rem 1rem 0.4rem;
+          margin: 0 0 0.8rem;
+          border-left: 5px solid #eeeeee;
+      }
+
+      blockquote p {
+          line-height: 1.2rem;
+          margin-bottom: 0.3rem;
+          text-align: start !important;
+      }
+
+      blockquote p:last-child {
+          margin-bottom: 0;
+      }
+
+      blockquote ul:last-child,
+      blockquote ol:last-child {
+          margin-bottom: 0;
+      }
+
+      blockquote footer,
+      blockquote small,
+      blockquote .small {
+          margin-bottom: 0.5rem;
+          display: block;
+          font-size: 80%;
+          line-height: 1.42857;
+          color: #999;
+          padding: 0;
+      }
+
+      blockquote footer:before,
+      blockquote small:before,
+      blockquote .small:before {
+          content: "— ";
+      }
+
+      blockquote cite:before {
+          content: "«";
+      }
+
+      blockquote cite:after {
+          content: "»";
+      }
+
+      li {
+          margin-top: 4px;
+      }
+
+      a {
+          color: #844826;
+      }
+
+
+        </style>
+    </head>
+
+    <body id="root">
+        <div class="ui borderless grey inverted menu">
+            <div class="ui container">
+            </div>
+        </div>
+        <div class="ui grid stackable container">
+            <div class="row" id="page-header">
+                <div class="ui basic segment">
+                    <h1 class="ui big header">
+                        <div class="content">Francisco Vial-Prado</div>
+                        <div class="sub header">
+                            Cryptography | Fortanix
+                        </div>
+                    </h1>
+                </div>
+            </div>
+            <div class="row" id="article">
+                <div class="ten wide column">
+                    <img src="img/poulenc.jpg">
+
+                    <p>
+                    Thanks for visiting my webpage. There is not much here, so
+                    I'm sharing some things I have been doing. Feel free
+                    to drop me an email.
+                    </p>
+
+                    <p>
+                    <b>
+                    Full CV on demand.
+                    </b>
+                    </p>
+
+                    <h2 class="ui large header">
+                        <div class="content">Cryptography</div>
+                        <div class="sub header">
+                            Ph.D. Université Paris-Saclay
+                        </div>
+                    </h2>
+                    <div class="ui hidden divider"></div>
+                    <p>
+                    My Ph.D. advisor was Professor <a href="http://goubin.fr">Louis Goubin</a>.
+                    After positions at <a href="https://imfd.cl">Instituto Milenio Fundamentos de los Datos</a> and <a href="https://www.protonmail.com">ProtonMail</a>, I currently work at <a href="https://www.fortanix.com">Fortanix</a>.
+                    <ul>
+                        <li>A peek inside post-quantum keys <a href="https://www.fortanix.com/blog/a-peek-inside-post-quantum-key"> <i class="ui bullhorn icon"></i></a></li>
+                        <li>PGP with secrets in the cloud <a href="https://www.fortanix.com/blog/2022/01/pgp-with-secrets-in-the-cloud/"> <i class="ui bullhorn icon"></i></a>,<a href="https://github.com/fortanix/sq-dsm"><i class="ui code icon"></i></a></li>
+                        <li>OpenPGP Email Forwarding via Diverted Elliptic Curve Diffie-Hellman Key Exchanges <a href="pdf/openpgp.pdf"> <i class="ui file outline icon"></i></a></li>
+                        <li>CKKS, a homomorphic encryption scheme for approximate arithmetic <a href="https://github.com/zugzwang/ckks-go"><i class="ui code icon"></i></a></li>
+                        <li>Proton is secure against batch GCD attacks <a href="https://protonmail.com/blog/batch-gcd/"><i class="ui bullhorn icon"></i></a></li>
+                        <li>Cryptocurrency Mining Games with Economic Discount and Decreasing Rewards <a href="pdf/mining.pdf"> <i class="ui file outline icon"></i></a></li>
+                        <li><tt>C++</tt> Implementation of Bernstein's Batch GCD algorithm <a href="https://github.com/zugzwang/c-batchgcd"><i class="ui code icon"></i></a></li>
+                        <li>Excalibur Key-Generation Protocols For DAG Hierarchic Decryption <a href="pdf/excaliburN.pdf"> <i class="ui file outline icon"></i></a>, <a href="https://github.com/zugzwang/cyclotomic-polynomial-ring-multiply"><i class="ui code icon"></i></a></li>
+                        <li><tt>C++</tt> Implementation of the BGV homomorphic encryption scheme <a href="https://github.com/zugzwang/bgv-homomorphic-encryption/raw/master/BGV.pdf"> <i class="ui file outline icon"></i></a>, <a href="https://github.com/zugzwang/bgv-homomorphic-encryption/"><i class="ui code icon"></i></a> </li>
+                        <li>Rust-Ring-Learning With Errors <a href="https://github.com/zugzwang/rlwe"><i class="ui code icon"></i></a>
+                        <li>Arithmetic in negacyclic rings <a href="https://github.com/zugzwang/negacyclic"><i class="ui code icon"></i></a>
+                        <li>Blending FHE-NTRU keys – The Excalibur Property:<a href="pdf/excalibur2.pdf"> <i class="ui file outline icon"></i></a></li>
+                        <li>ASCrypto LatinCrypt 19 - Introductory talk about Homomorphic Encryption:<a href="pdf/latincrypt.pdf"> <i class="ui file outline icon"></i></a></li>
+                        <li>The Gelfand Problem In Tubular Domains <a href="https://github.com/zugzwang/edp-gelfand/raw/master/main.pdf"> <i class="ui file outline icon"></i></a></li>
+                        <li>The E8 lattice <em>(student work, based on Serre's cours d'arithméthique, french)</em> <a href="pdf/e8.pdf"> <i class="ui file outline icon"></i></a> </li>
+                        <li> Some solutions to problems in the problems section of mathematics magazines:
+                            <ul>
+                                <li><a href="pdf/solutions/11458.pdf">AMM 11458</a> - Cauchy-Schwarz</li>
+                                <li><a href="pdf/solutions/MM1845.pdf">MM 1845</a> - Fractional Integral and Euler-Mascheroni constant</li>
+                                <li><a href="pdf/solutions/11456.pdf">AMM 11456</a> - cosh(π)</li>
+                                <li><a href="pdf/solutions/907.pdf">CMJ907</a> - Pell-Lucas Numbers</li>
+                                <li><a href="pdf/solutions/1827.pdf">MM1827</a> - Integer matrix with permutations</li>
+                                <li><a href="pdf/solutions/MM1828.pdf">MM 1828</a> - sqrt(π)</li>
+                                <li><a href="pdf/solutions/906.pdf">CMJ906</a> - A product</li>
+                                <li><a href="pdf/solutions/1210.pdf">PME1210</a> - Ellipsoid and AM-GM</li>
+                                <li><a href="pdf/solutions/11376.pdf">AMM 11376</a> - Converging Series</li>
+                                <li><a href="pdf/solutions/11396.pdf">AMM 11396</a> - Determinants and Recurrence Relations</li>
+                                <li><a href="pdf/solutions/11459.pdf">AMM 11459</a> - Double sum, double product</li>
+                                <li><a href="pdf/solutions/MM1217.pdf">MM 1217</a> - Fractional Integral</li>
+                                <li><a href="pdf/solutions/1812.pdf">MM1786</a> - Floor Function Sum</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="ui divider"></div>
+                    <h2 class="ui large header">
+                        <div class="content">Music</div>
+                        <div class="sub header">
+                            Conservatoire de Versailles
+                        </div>
+                    </h2>
+                    <div class="ui hidden divider"></div>
+                    <p>
+                    I am lucky to have been trained by
+                    <a href="img/fgouet.jpg">Francisco Gouët</a>
+                    (Orquesta Sinfónica de Chile),
+                    <a href="http://philippecuper.com/">Philippe Cuper</a> (Opéra de Paris),
+                    and the great <a href="https://www.luisrossi.com/the-maker.html">Luis Rossi</a>. Recordings on demand:
+                    <br>
+                    </p>
+                    <ul>
+                        <li>Mozart - Clarinet Quintet, first movement (with Amadeus ensemble)</li>
+                        <li>Francis Poulenc - Clarinet sonata, Allegro con Fuoco (Armelle Mathis, piano)</li>
+                        <li>Edison Denisov - Clarinet sonata (Paris, 2017)</li>
+                        <li>Carl Nielsen - Clarinet concerto Op. 57</li>
+                        <li>Francis Poulenc - Clarinet sonata, Romanza (Armelle Mathis, piano)</li>
+                        <li>Igor Stravinsky - Three pieces for clarinet solo</li>
+                        <li>Aron Copland - Clarinet concerto, Orchestre Tour-à-Tour, Paris 2017)</li>
+                        <li>Jean-Baptiste Robin - Labyrinthe Circulaire for 9 clarinets</li>
+                        <li>Guillaume Connesson - Disco Toccata (with Pablo Schinke, cello)</li>
+                    </ul>
+                    <div class="ui hidden divider"></div>
+                    <div class="ui divider"></div>
+                </div>
+
+                <div class="six wide right floated column">
+                    <div class="ui secondary segment">
+                        <h4 class="ui header">Email Contact</h4>
+                        <p>
+                        <tt>francisco</tt> -the thing- <tt>vialprado.com</tt>
+
+                        <h4 class="ui header">Other</h4>
+                        GitHub: <tt>zugzwang</tt><br>
+                        <br></br>
+                        The pianist in the picture is my friend Camilo Gouët.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="ui secondary segment">
+            <div class="ui center aligned container">
+            </div>
+        </footer>
+    </body>
+</html>
